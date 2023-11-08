@@ -41,3 +41,12 @@ com.example:bom-tree:jar:0.0.1-SNAPSHOT
 ```
 
 No `spring-core`. Although if we run `./mvnw package`, `spring-core.jar` will be present in `BOOT-INF/lib`.
+
+Running `./mvnw dependency:tree -Dincludes=org.springframework:spring-core` shows that `spring-core` 
+is under `test` as far as Maven is concerned:
+
+```
+com.example:bom-tree:jar:0.0.1-SNAPSHOT
+\- org.springframework.boot:spring-boot-starter-test:jar:3.1.5:test
+   \- org.springframework:spring-core:jar:6.0.13:compile
+```
