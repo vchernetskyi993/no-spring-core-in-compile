@@ -4,6 +4,8 @@ The minimal example to reproduce an issue, when `spring-core` is not represented
 
 This example is created using Spring Initializr with single dependency for OAuth2 Resource Server.
 
+Related StackOverflow question: https://stackoverflow.com/q/77446813/12018844.
+
 Run `./mvnw dependency:tree -Dscope=compile -DoutputFile=result.log`.
 
 `result.log` will look like:
