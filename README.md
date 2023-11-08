@@ -2,9 +2,11 @@
 
 The minimal example to reproduce an issue, when `spring-core` is not represented for `-Dscope=compile`.
 
+This example is created using Spring Initializr with single dependency for OAuth2 Resource Server.
+
 Run `./mvnw dependency:tree -Dscope=compile -DoutputFile=result.log`.
 
-result.log will look like:
+`result.log` will look like:
 
 ```
 com.example:bom-tree:jar:0.0.1-SNAPSHOT
